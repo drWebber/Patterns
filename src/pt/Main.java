@@ -5,7 +5,11 @@ import java.util.Date;
 import pt.creational.builder.account.Account;
 import pt.creational.builder.house.*;
 import pt.creational.prototype.word.Word;
-import pt.benavioral.state.*;
+import pt.behavioral.observer.Mailer;
+import pt.behavioral.observer.News;
+import pt.behavioral.observer.RssFeed;
+import pt.behavioral.observer.Website;
+import pt.behavioral.state.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,6 +46,12 @@ public class Main {
             radio.play();
             radio.nextChannel();
         }
+        
+        System.out.println("\nObserver pattern: ");
+        Website website = new Website();
+        website.addObserver(new RssFeed());
+        website.addObserver(new Mailer());
+        website.addNews(new News("What's new in Java 8.0", "News content"));
         
     }
 }

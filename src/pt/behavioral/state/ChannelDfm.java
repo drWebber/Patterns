@@ -1,4 +1,4 @@
-package pt.benavioral.state;
+package pt.behavioral.state;
 
 public class ChannelDfm implements Channel {
     @Override
