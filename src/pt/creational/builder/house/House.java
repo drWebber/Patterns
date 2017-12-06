@@ -1,4 +1,4 @@
-package pt.builder.house;
+package pt.creational.builder.house;
 
 public class House {
     private String walls;

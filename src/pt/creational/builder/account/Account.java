@@ -1,4 +1,4 @@
-package pt.builder.account;
+package pt.creational.builder.account;
 
 import java.util.Date;
 

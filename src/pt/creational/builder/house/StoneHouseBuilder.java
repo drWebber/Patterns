@@ -1,21 +1,21 @@
-package pt.builder.house;
+package pt.creational.builder.house;
 
-public class GrassHouseBuilder extends HouseBuilder {
+public class StoneHouseBuilder extends HouseBuilder {
     @Override
     public HouseBuilder buildWalls() {
-        house.setWalls("grass");
+        house.setWalls("stone");
         return this;
     }
 
     @Override
     public HouseBuilder buildWindows() {
-        house.setWindows(5);
+        house.setWindows(4);
         return this;
     }
 
     @Override
     public HouseBuilder buildDoors() {
-        house.setDoors(1);
+        house.setDoors(2);
         return this;
     }
 

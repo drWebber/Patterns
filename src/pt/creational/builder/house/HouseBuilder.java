@@ -1,4 +1,4 @@
-package pt.builder.house;
+package pt.creational.builder.house;
 
 public abstract class HouseBuilder {
     protected House house = new House();
